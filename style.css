@@ -1,0 +1,169 @@
+/**
+* NAME: Jacquelyn Co
+*
+* HEADER: This is the CSS file of Jacquelyn Co's Website for Lab 3.
+* It contains the styling elements that make her website more presentable
+* and appealing.
+*
+**/
+
+/* ***NAVIGATION LINKS SECTION *** */
+
+/*@font-face {
+    font-family: fontname;
+    src: url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXiWtFCc.woff2);
+}*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    min-width: 738px;
+    max-width: 2000px;
+}
+
+#navLinks {
+    height: 20px;
+    position: fixed;
+    background-color: #943247;
+    width: 100%;
+    margin: 0 0 10px 0;
+    z-index: 2;
+    text-align: center;
+    color: white
+}
+
+
+/*applying flex properties to titleSection which is an element which has more than 2 children*/
+#titleSection .titleContainer {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 3;
+    flex-grow: 4;
+    padding: 0 15px;
+}
+
+@media only screen and (max-width: 1250px) {
+    h1 {
+      font-size: 40px;
+      margin: 300px 0 0 0;
+    }
+  }
+  
+@media only screen and (max-width: 1400px) {
+    h1 {
+      font-size: 60px;
+      margin: 0 0 5px 0;
+    }
+}
+
+a:hover {
+    background-color: black;
+}
+
+.links {
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-right: 3rem;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+/* **STYLING NAME INFO ON FRONT PAGE ** */
+h1 {
+    color: black;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 4.0cm;
+    margin: 0 0 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+#subtitle {
+    color: rgb(247, 240, 240);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2.0cm;
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #943247;
+    font-size: 10mm;
+}
+
+.Day1Title, .Day2Title, .Day3Title {
+    text-decoration: underline overline;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h3 {
+    color: hsla(290,100%,50%,0.5);
+}
+
+.day1-todo-items, .day2-todo-items, .day3-todo-items {
+    padding: 0 0 10pt 0;
+}
+
+.highs_lows_item {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 2mm;
+    padding-right: 0;
+}
+
+.highs_lows {
+    border-style: dotted;
+    border-radius: 1rem;
+    border-width: 5px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-color: #943247;
+}
+
+#newEntry {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 10mm;
+}
+
+.toDo{
+    display: inline;
+}
+
+p:active {
+    background-color: plum;
+}
+
+[class^="toDo"] {
+    font-size: 25px;
+}
+
+p + span {
+    font-weight: bold;
+    color: plum;
+}
+
+h1 ~ h2 {
+    background-color: black;
+}
+
+.background.background-plum {
+    background-color: plum;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 8mm;
+}
